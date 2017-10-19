@@ -3,7 +3,7 @@ $botToken = " "; // Êæßä ÇáÈæÊ
 $website = "https://api.telegram.org/bot".$botToken;
 $update = file_get_contents('php://input');
 $update = json_decode($update, TRUE);
-// By rami
+// By rambosyr
 $fwd = $update["message"]["forward_from"];
 $fwd2 = $update["message"]["forward_from"]["id"];
 $fwd = $update["message"]["forward_from"]["message"];
